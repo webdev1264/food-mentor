@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   cursor: pointer;
   padding: 8px;
   height: 80px;
@@ -10,6 +11,7 @@
   @media (min-width: 992px) {
     margin-bottom: 16px;
     height: 100px;
+    width: 550px;
   }
 }
 
