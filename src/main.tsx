@@ -6,7 +6,6 @@ import store from "./redux/store.ts";
 import Root from "./routes/root.tsx";
 import Home from "./components/Home.tsx";
 import PlanSetup from "./routes/plan-setup.tsx";
-("./components/Plan/index.tsx");
 
 const router = createBrowserRouter([
   {

@@ -4,7 +4,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
-Live site URL - [https://](https://)
+Live site URL - [https://food-mentor-tawny.vercel.app/](https://food-mentor-tawny.vercel.app/)
 
 Code - [https://github.com/webdev1264/food-mentor](https://github.com/webdev1264/food-mentor)
 
