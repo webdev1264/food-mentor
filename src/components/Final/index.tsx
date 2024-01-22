@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+
 import ProgressBar from "../ProgressBar";
 import Title from "../Title";
+import { planSelector } from "../../redux/selectors";
 import lock from "../../assets/logos/lock.png";
 import style from "./final.module.scss";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { planSelector } from "../../redux/selectors";
 
 const Final = () => {
   const [isSubmit, setIsSubmit] = useState(false);
