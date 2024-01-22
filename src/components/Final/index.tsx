@@ -4,21 +4,32 @@ import Title from "../Title";
 import lock from "../../assets/logos/lock.png";
 import style from "./final.module.scss";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { planSelector } from "../../redux/selectors";
 
 const Final = () => {
   const [isSubmit, setIsSubmit] = useState(false);
+
+  const plan = useSelector(planSelector);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmit(true);
   };
 
-  if (!isSubmit) {
+  if (isSubmit) {
     return (
-      <div className={style.bodyType}>
+      <div className={style.final}>
         <ProgressBar progress={100} />
         <div className="container">
           <Title title="The message has been sent to you!" />
+          <h3 className={style.subtitle}>Summary</h3>
+          <ul>
+            <li>Gender: {plan.gender}</li>
+            <li>Your body type: {plan.bodyType}</li>
+            <li>Your goal: {plan.goal}</li>
+            <li>Workout: {plan.workout}</li>
+          </ul>
           <Link to="/">
             <button className={style.homeBtn}>Home</button>
           </Link>
@@ -28,7 +39,7 @@ const Final = () => {
   }
 
   return (
-    <div className={style.bodyType}>
+    <div className={style.final}>
       <ProgressBar progress={100} />
       <div className="container">
         <Title title="Enter your email to get your Personal Weight loss Plan!" />

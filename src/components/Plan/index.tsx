@@ -6,8 +6,8 @@ import Title from "../Title";
 import male from "../../assets/male.png";
 import female from "../../assets/female.png";
 import icon from "../../assets/logos/icon.svg";
-import style from "./plan.module.scss";
 import { PlanPayload } from "../../redux/types";
+import style from "./plan.module.scss";
 
 const Plan = () => {
   const dispatch = useAppDispatch();
@@ -24,7 +24,7 @@ const Plan = () => {
         <div className={style.content}>
           <div
             className={style.wrapper}
-            onClick={() => handleOnClick({ type: "gender", value: "male" })}>
+            onClick={() => handleOnClick({ type: "gender", value: "Male" })}>
             <img className={style.maleImg} src={male} alt="Male" />
             <div className={style.maleBtn}>
               <div>Male</div>
@@ -35,7 +35,7 @@ const Plan = () => {
           </div>
           <div
             className={style.wrapper}
-            onClick={() => handleOnClick({ type: "gender", value: "female" })}>
+            onClick={() => handleOnClick({ type: "gender", value: "Female" })}>
             <img className={style.femaleImg} src={female} alt="Female" />
             <div className={style.femaleBtn}>
               <div>Female</div>
