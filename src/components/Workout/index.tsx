@@ -12,7 +12,7 @@ const Workout = () => {
         <Title title="Do you workout?" />
         <div className={style.content}>
           {workoutToSelect.map((workout) => {
-            return <ItemBlock key={workout.id} planType={workout} type="workout" />;
+            return <ItemBlock key={workout.id} planType={workout} type="workout" iconWidth="60" />;
           })}
         </div>
       </div>

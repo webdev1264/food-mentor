@@ -35,6 +35,9 @@
 
 .imgWrapper {
   width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 20px;
   overflow: hidden;
   @media (min-width: 992px) {

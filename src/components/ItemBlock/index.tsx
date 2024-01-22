@@ -6,9 +6,10 @@ import style from "./itemBlock.module.scss";
 type WorkoutItemProps = {
   planType: Record<string, string>;
   type: PlanKey;
+  iconWidth?: string;
 };
 
-const WorkoutItem = ({ planType, type }: WorkoutItemProps) => {
+const WorkoutItem = ({ planType, type, iconWidth = "" }: WorkoutItemProps) => {
   const dispatch = useAppDispatch();
 
   const handleOnClick = (planType: PlanPayload) => {
@@ -24,8 +25,8 @@ const WorkoutItem = ({ planType, type }: WorkoutItemProps) => {
       <div className={style.descrWrapper}>
         <p className={style.description}>{planType.text}</p>
       </div>
-      <div className={style.imgWrapper}>
-        <img className={planType.color} src={planType.img} alt={planType.text} />
+      <div className={`${style.imgWrapper} ${planType.color}`}>
+        <img src={planType.img} alt={planType.text} style={{ width: `${iconWidth}%` }} />
       </div>
     </div>
   );
