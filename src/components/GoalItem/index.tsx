@@ -18,7 +18,9 @@ const GoalItem = ({ goal }: GoalItemProps) => {
     <div
       className={style.wrapper}
       onClick={() => handleOnClick({ type: "goal", value: goal.text })}>
-      <img className={goal.color} src={goal.img} alt={goal.text} />
+      <div className={style.imgWrapper}>
+        <img className={goal.color} src={goal.img} alt={goal.text} />
+      </div>
       <p className={style.description}>{goal.text}</p>
     </div>
   );

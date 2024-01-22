@@ -25,7 +25,9 @@ const Plan = () => {
           <div
             className={style.wrapper}
             onClick={() => handleOnClick({ type: "gender", value: "Male" })}>
-            <img className={style.maleImg} src={male} alt="Male" />
+            <div className={style.imgWrapper}>
+              <img className={style.maleImg} src={male} alt="Male" />
+            </div>
             <div className={style.maleBtn}>
               <div>Male</div>
               <div className={style.icon}>
@@ -36,7 +38,9 @@ const Plan = () => {
           <div
             className={style.wrapper}
             onClick={() => handleOnClick({ type: "gender", value: "Female" })}>
-            <img className={style.femaleImg} src={female} alt="Female" />
+            <div className={style.imgWrapper}>
+              <img className={style.femaleImg} src={female} alt="Female" />
+            </div>
             <div className={style.femaleBtn}>
               <div>Female</div>
               <div className={style.icon}>

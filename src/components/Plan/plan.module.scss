@@ -9,58 +9,7 @@
   justify-content: center;
   gap: 10px;
   margin: 64px auto;
-  .wrapper {
-    cursor: pointer;
-    overflow: hidden;
-    width: 45%;
-    background: #fff;
-    border-radius: 30px;
-    border: 8px solid #fff;
-    .maleImg {
-      border-radius: 30px;
-      background-color: $pale-purple;
-    }
-    .femaleImg {
-      border-radius: 30px;
-      background-color: $pale-green;
-    }
 
-    .maleBtn,
-    .femaleBtn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      width: 100%;
-      height: 46px;
-      border-radius: 30px;
-      border: none;
-      font-family: Urbanist, sans-serif;
-      font-size: 16px;
-      font-weight: 800;
-      color: #fff;
-      @media (min-width: 768px) {
-        height: 70px;
-        font-size: 24px;
-      }
-      @media (min-width: 992px) {
-        height: 90px;
-        font-size: 24px;
-      }
-    }
-    .maleBtn {
-      background-color: #837ae9;
-    }
-    .femaleBtn {
-      background-color: #5bd376;
-    }
-    @media (min-width: 768px) {
-      width: 30%;
-    }
-    @media (min-width: 992px) {
-      width: 20%;
-    }
-  }
   @media (min-width: 390px) {
     margin-top: 124px;
   }
@@ -68,4 +17,72 @@
     margin-top: 60px;
     gap: 20px;
   }
+}
+
+.wrapper {
+  cursor: pointer;
+  overflow: hidden;
+  width: 45%;
+  background: #fff;
+  border-radius: 30px;
+  border: 8px solid #fff;
+
+  @media (min-width: 768px) {
+    width: 30%;
+  }
+  @media (min-width: 992px) {
+    width: 20%;
+  }
+}
+
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150%;
+  overflow: hidden;
+}
+.maleImg,
+.femaleImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: $pale-purple;
+}
+.femaleImg {
+  background-color: $pale-green;
+}
+
+.maleBtn,
+.femaleBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  width: 100%;
+  height: 46px;
+  border-radius: 30px;
+  border: none;
+  font-family: Urbanist, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  @media (min-width: 768px) {
+    height: 70px;
+    font-size: 24px;
+  }
+  @media (min-width: 992px) {
+    height: 90px;
+    font-size: 24px;
+  }
+}
+.maleBtn {
+  background-color: #837ae9;
+}
+.femaleBtn {
+  background-color: #5bd376;
 }
