@@ -4,6 +4,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import store from "./redux/store.ts";
 import Root from "./routes/root.tsx";
+import Home from "./components/Home.tsx";
+import PlanSetup from "./routes/plan-setup.tsx";
+("./components/Plan/index.tsx");
 
 const router = createBrowserRouter([
   {
@@ -11,8 +14,12 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "/plan",
-        element: <h2>Plan</h2>,
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "/plan-setup",
+        element: <PlanSetup />,
       },
     ],
   },

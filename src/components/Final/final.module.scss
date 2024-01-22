@@ -1,0 +1,91 @@
+@import "../../scss/variables";
+
+.email {
+  margin-top: 34px;
+  width: 320px;
+  height: 54px;
+  text-align: left;
+  border: 3px solid #5bd376;
+  border-radius: 50px;
+  padding: 16px 24px;
+  color: $gray;
+  font-family: Urbanist, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  @media (min-width: 390px) {
+    margin-top: 56px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 122px;
+    height: 74px;
+    padding: 24px 32px;
+    font-size: 20px;
+  }
+}
+
+.lock {
+  width: 32px;
+}
+
+.privacy {
+  display: flex;
+  gap: 8px;
+  margin: 0 auto;
+  width: 328px;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: $pale-purple;
+  border-radius: 20px;
+  margin-top: 83px;
+  @media (min-width: 390px) {
+    margin-top: 253px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 215px;
+  }
+}
+
+.description {
+  width: 100%;
+  color: $gray;
+  text-align: justify;
+  font-family: Urbanist, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  @media (min-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+.submitBtn,
+.homeBtn {
+  margin-top: 20px;
+  width: 328px;
+  height: 46px;
+  color: #fff;
+  font-family: Urbanist, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px;
+  background-color: #5bd376;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  @media (min-width: 992px) {
+    margin: 40px 0 66px;
+    height: 72px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .email,
+  .privacy,
+  .submitBtn {
+    width: 550px;
+  }
+}

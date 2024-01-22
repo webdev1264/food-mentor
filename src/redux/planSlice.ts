@@ -1,10 +1,11 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { PlanKey, PlanState } from "./types";
+import { PlanPayload, PlanState } from "./types";
 
 const initialState: PlanState = {
   step: 1,
   selectedPlan: {
     gender: "",
+    goal: "",
     bodyType: "",
     workout: "",
   },
@@ -17,8 +18,9 @@ const planSlice = createSlice({
     setStep(state, action: PayloadAction<number>) {
       state.step = action.payload;
     },
-    setPlan(state, action: PayloadAction<{ type: PlanKey; value: string }>) {
+    setPlan(state, action: PayloadAction<PlanPayload>) {
       state.selectedPlan[action.payload.type] = action.payload.value;
+      state.step += 1;
     },
   },
 });

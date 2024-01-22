@@ -1,4 +1,6 @@
-export type PlanKey = "gender" | "bodyType" | "workout";
+export type PlanKey = "gender" | "goal" | "bodyType" | "workout";
+
+export type PlanPayload = { type: PlanKey; value: string };
 
 export type PlanState = {
   step: number;

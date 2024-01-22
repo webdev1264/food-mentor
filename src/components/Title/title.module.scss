@@ -1,0 +1,23 @@
+.wrapper {
+  font-family: Urbanist, sans-serif;
+}
+
+.title {
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38px;
+  @media (min-width: 992px) {
+    font-size: 46px;
+  }
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 22px;
+  @media (min-width: 992px) {
+    font-size: 22px;
+  }
+}

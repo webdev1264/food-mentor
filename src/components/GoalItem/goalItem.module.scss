@@ -1,0 +1,28 @@
+.wrapper {
+  margin-top: 24px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 30px;
+  background: #fff;
+  border: 8px solid #fff;
+  @media (min-width: 390px) {
+    margin-top: 64px;
+  }
+  @media (min-width: 992px) {
+    margin: 124px 0;
+  }
+  img {
+    border-radius: 30px;
+  }
+}
+
+.description {
+  margin: 8px 0;
+  color: #323631;
+  font-family: Urbanist, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
+}

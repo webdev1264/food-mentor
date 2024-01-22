@@ -8,24 +8,17 @@ Live site URL - [https://](https://)
 
 Code - [https://](https://)
 
-## Expanding the ESLint configuration
+## How To Use
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+# Clone this repository
+$ git clone https://github.com/webdev1264/food-mentor.git
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
-    project: ["./tsconfig.json", "./tsconfig.node.json"],
-    tsconfigRootDir: __dirname,
-  },
-};
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
