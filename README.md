@@ -6,7 +6,7 @@ Currently, two official plugins are available:
 
 Live site URL - [https://](https://)
 
-Code - [https://](https://)
+Code - [https://github.com/webdev1264/food-mentor](https://github.com/webdev1264/food-mentor)
 
 ## How To Use
 
