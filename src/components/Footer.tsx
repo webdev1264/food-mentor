@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer-wrapper">
       <div className="footer-description">
-        <p>Netpeak eood, 47 cherni vruh Blvd, fl. 5 Lozenets, Sofia, Bulgaria</p>
+        <p>Netpeak food, 47 cherni vruh Blvd, fl. 5 Lozenets, Sofia, Bulgaria</p>
         <div className="contacts-wrapper">
           <div>
             <a href="mailto:support@food-mentor.com">support@food-mentor.com</a>

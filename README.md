@@ -1,4 +1,4 @@
-# Food Mentor test task
+# Food Mentor test task by Netpeak
 
 Live site URL - [https://food-mentor-tawny.vercel.app/](https://food-mentor-tawny.vercel.app/)
 
